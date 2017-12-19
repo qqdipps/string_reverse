@@ -13,7 +13,6 @@ describe "string reverse" do
         test_string.must_equal "olleH"
       end
     end
-
     describe "test 2" do
       it "reverse a string with even number of characters" do
         test_string = "Software"
@@ -48,7 +47,7 @@ describe "string reverse" do
   end
 
   # check for edge cases
-  describe "edge cases"
+  describe "edge cases" do
     describe "edge case 1" do
       it "string with one character passed to reverse" do
         test_string = "?"
