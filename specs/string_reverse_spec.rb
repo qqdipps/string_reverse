@@ -4,23 +4,20 @@ require_relative '../lib/string_reverse'
 
 describe "string reverse" do
   describe "basic tests" do
-    describe "test 1" do
-      it "reverse a string with odd number of characters" do
-        test_string = "Hello"
+    it "reverse a string with odd number of characters" do
+      test_string = "Hello"
 
-        string_reverse(test_string)
+      string_reverse(test_string)
 
-        test_string.must_equal "olleH"
-      end
+      test_string.must_equal "olleH"
     end
-    describe "test 2" do
-      it "reverse a string with even number of characters" do
-        test_string = "Software"
 
-        string_reverse(test_string)
+    it "reverse a string with even number of characters" do
+      test_string = "Software"
 
-        test_string.must_equal "erawtfoS"
-      end
+      string_reverse(test_string)
+
+      test_string.must_equal "erawtfoS"
     end
   end
 
@@ -48,24 +45,20 @@ describe "string reverse" do
 
   # check for edge cases
   describe "edge cases" do
-    describe "edge case 1" do
-      it "string with one character passed to reverse" do
-        test_string = "?"
+    it "string with one character passed to reverse" do
+      test_string = "?"
 
-        string_reverse(test_string)
+      string_reverse(test_string)
 
-        test_string.must_equal "?"
-      end
+      test_string.must_equal "?"
     end
 
-    describe "edge case 2" do
-      it "a really long string passed to reverse" do
-        test_string = "Oh, Supercalifragelisticexpialidocious! Even though the sound of it is something quite atrocious. If you say it loud enough, you'll always sound precocious. Supercalifragelisticexpialidocious!"
+    it "a really long string passed to reverse" do
+      test_string = "Oh, Supercalifragelisticexpialidocious! Even though the sound of it is something quite atrocious. If you say it loud enough, you'll always sound precocious. Supercalifragelisticexpialidocious!"
 
-        string_reverse(test_string)
+      string_reverse(test_string)
 
-        test_string.must_equal "!suoicodilaipxecitsilegarfilacrepuS .suoicocerp dnuos syawla ll'uoy ,hguone duol ti yas uoy fI .suoicorta etiuq gnihtemos si ti fo dnuos eht hguoht nevE !suoicodilaipxecitsilegarfilacrepuS ,hO"
-      end
+      test_string.must_equal "!suoicodilaipxecitsilegarfilacrepuS .suoicocerp dnuos syawla ll'uoy ,hguone duol ti yas uoy fI .suoicorta etiuq gnihtemos si ti fo dnuos eht hguoht nevE !suoicodilaipxecitsilegarfilacrepuS ,hO"
     end
   end
 end
