@@ -21,8 +21,9 @@ describe "string reverse" do
     end
   end
 
-  # if it's a string parameter, check for empty
-  describe "empty string input test" do
+  # check for edge cases
+  describe "edge cases" do
+    # if it's a string parameter, check for empty
     it "reverse an empty string" do
       test_string = ""
 
@@ -30,10 +31,8 @@ describe "string reverse" do
 
       test_string.must_be_empty
     end
-  end
 
-  # if the parameter is an object, check for nil
-  describe "nil object input test" do
+    # if the parameter is an object, check for nil
     it "nil object passed to reverse" do
       test_string = nil
 
@@ -41,10 +40,7 @@ describe "string reverse" do
 
       test_string.must_be_nil
     end
-  end
 
-  # check for edge cases
-  describe "edge cases" do
     it "string with one character passed to reverse" do
       test_string = "?"
 
